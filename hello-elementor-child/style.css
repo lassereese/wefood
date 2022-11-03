@@ -1,0 +1,92 @@
+/*
+ Theme Name:   hello-elementor-child
+ Theme URI:    https://wefood.lassereese.dk/
+ Description:  Hello-elementor-ChildTheme
+ Author:       Lasse Reese Viksnins Johansen
+ Author URI:   http://example.com
+ Template:     hello-elementor
+ Version:      1.2.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  hello-elementor-child
+*/
+
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+/* Animation på back to the top knappen*/
+
+#myBtn {
+  display: none; /* Gemt til i toppen */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /*Placere knappen i bunden af sidne */
+  right: 30px; /* Placere knappen 30px fra højre */
+  z-index: 99; /* Sikre at knappen ikke overlapper elementer */
+  border: none; /* Ingen borders */
+  outline: none; /* Ingen outline */
+  background-color: transparent; /* Gør baggrundsfarve transperant */
+  cursor: pointer; /* Gør musen til pointer ved hover */
+  padding: 15px; /* tilføjer padding */
+  border-radius: 10px; /* Runde hjørner */
+  width: 4%; /* bredde */
+}
+
+#myBtn:hover {
+  background-color: red; /* Rød baggrund ved hover*/
+}
+
+/* Floatinganimationer på illustrationerne i toppen af side, ved brug af keyframes. 
+Differentieret fra hinanden ved brug af foskellige længder på annimationerne */
+
+#flaske { 
+    animation-name: floating; /* Floating animation */
+    animation-duration: 3s; /* Længde på animation */
+    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+}
+
+#maelk { 
+    animation-name: floating; /* Floating animation */
+    animation-duration: 4s; /* Længde på animation */
+    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+}
+
+#broed { 
+    animation-name: floating; /* Floating animation */
+    animation-duration: 2s; /* Længde på animation */
+    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+}
+
+/* Annimation på */
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+/* Giver sidehoved backgrunds blur */
+
+#logo {
+  backdrop-filter: blur(1.5px);
+}
+
+/* Fixer problemer med overflow på mobilformat */
+@media (max-width: 479px){
+    body {overflow-x:hidden;}
+}
+
+#myBtn:hover {
+  background-color: red; /* Rød baggrund ved hover*/
+}
+  
+}
+
+
+
