@@ -42,33 +42,39 @@ html {
 /* Floatinganimationer på illustrationerne i toppen af side, ved brug af keyframes. 
 Differentieret fra hinanden ved brug af foskellige længder på annimationerne */
 
-#flaske { 
-    animation-name: floating; /* Floating animation */
-    animation-duration: 3s; /* Længde på animation */
-    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
-    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+#flaske {
+  animation-name: floating; /* Floating animation */
+  animation-duration: 3s; /* Længde på animation */
+  animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+  animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
 }
 
-#maelk { 
-    animation-name: floating; /* Floating animation */
-    animation-duration: 4s; /* Længde på animation */
-    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
-    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+#maelk {
+  animation-name: floating; /* Floating animation */
+  animation-duration: 4s; /* Længde på animation */
+  animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+  animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
 }
 
-#broed { 
-    animation-name: floating; /* Floating animation */
-    animation-duration: 2s; /* Længde på animation */
-    animation-iteration-count: infinite; /* Gør at animationen bliver ved */
-    animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
+#broed {
+  animation-name: floating; /* Floating animation */
+  animation-duration: 2s; /* Længde på animation */
+  animation-iteration-count: infinite; /* Gør at animationen bliver ved */
+  animation-timing-function: ease-in-out; /* "glidende effekt" på animation */
 }
 
 /* Annimation på */
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 /* Giver sidehoved backgrunds blur */
@@ -78,15 +84,12 @@ Differentieret fra hinanden ved brug af foskellige længder på annimationerne *
 }
 
 /* Fixer problemer med overflow på mobilformat */
-@media (max-width: 479px){
-    body {overflow-x:hidden;}
+@media (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 #myBtn:hover {
   background-color: red; /* Rød baggrund ved hover*/
 }
-  
-}
-
-
-
